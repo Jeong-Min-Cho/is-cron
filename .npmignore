@@ -1,0 +1,40 @@
+# Source files
+src/
+
+# Test files
+test/
+*.test.ts
+*.spec.ts
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.eslintrc.cjs
+.editorconfig
+
+# Development files
+.git/
+.github/
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Misc
+.npmrc
+.gitignore

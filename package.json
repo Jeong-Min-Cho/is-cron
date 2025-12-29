@@ -1,0 +1,73 @@
+{
+  "name": "is-cron",
+  "version": "1.0.0",
+  "description": "Check if a string is a valid cron expression",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint --ext .ts src test",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "keywords": [
+    "cron",
+    "crontab",
+    "validate",
+    "validator",
+    "validation",
+    "is-cron",
+    "cron-expression",
+    "schedule",
+    "is",
+    "check",
+    "typescript"
+  ],
+  "author": {
+    "name": "Jeong Min Cho",
+    "email": "jeongmincho4@gmail.com",
+    "url": "https://www.npmjs.com/~jeongmincho"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeong-Min-Cho/is-cron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeong-Min-Cho/is-cron/issues"
+  },
+  "homepage": "https://github.com/Jeong-Min-Cho/is-cron#readme",
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.57.0",
+    "tsup": "^8.3.5",
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
