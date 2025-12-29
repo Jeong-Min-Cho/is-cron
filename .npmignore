@@ -2,12 +2,13 @@
 src/
 
 # Test files
-test/
+tests/
 *.test.ts
 *.spec.ts
 
 # Config files
 tsconfig.json
+tsconfig.eslint.json
 tsup.config.ts
 vitest.config.ts
 .eslintrc.cjs

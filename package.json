@@ -27,7 +27,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint --ext .ts src test",
+    "lint": "eslint --ext .ts src tests",
     "typecheck": "tsc --noEmit",
     "prepublishOnly": "npm run lint && npm run typecheck && npm run test && npm run build"
   },
